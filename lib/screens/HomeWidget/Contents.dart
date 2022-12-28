@@ -1,6 +1,7 @@
 class Strings {
   Strings._();
 
+  static const String logindesc = 'Make job offers directly from Rotary Jobs, highlighting people with the best skillsets for your posittion. Inform them about available positions and urge them to apply immediately from their phones.';
   static const String number = '8812330034';
   static const String hiring_completed = '0';
 

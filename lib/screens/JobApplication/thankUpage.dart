@@ -57,22 +57,24 @@ class ThankUpage extends StatelessWidget {
                 height: 48,
                 margin: EdgeInsets.symmetric(),
                 width: double.infinity,
-                child: FlatButton(
+                child: TextButton(
+                  style: ButtonStyle(
+                      backgroundColor: MaterialStateProperty.all(Color(0xFF174590)) ,
+                      shape: MaterialStateProperty.all<RoundedRectangleBorder>(RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(6),
+                      ))
+                  ),
                   child: Text("+Add other openings",
                     style: TextStyle(
                       fontSize: 18,
                       fontWeight: FontWeight.w500,
                       fontFamily: 'Poppins',
+                      color: Colors.white,
                     ),
                   ),
                   onPressed: (){
                     Navigator.push(context, MaterialPageRoute(builder: (_)=> JobInfoPage()));
                   },
-                  color: Color(0xff174590),
-                  textColor: Colors.white,
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(6),
-                  ),
                 ),
               ),
             ),

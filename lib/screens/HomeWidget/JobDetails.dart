@@ -453,9 +453,13 @@ class JobDetails extends StatelessWidget {
                         ),),
                       Padding(
                         padding: const EdgeInsets.symmetric(vertical: 6),
-                        child: FlatButton(
-                          height: 38,
-                          color: Colors.white,
+                        child: TextButton(
+                          style: ButtonStyle(
+                              backgroundColor: MaterialStateProperty.all(Colors.white) ,
+                              shape: MaterialStateProperty.all<RoundedRectangleBorder>(RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(4),
+                              ))
+                          ),
                           onPressed: () {  },
                           child: Text("Computer Skilled",style: TextStyle(color: Colors.black87,fontSize: 16, fontFamily: 'Lato',),),
 

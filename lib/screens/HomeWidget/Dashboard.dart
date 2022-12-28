@@ -182,16 +182,24 @@ class _DashboardPageState extends State<DashboardPage> {
                 actions: [
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 18,vertical: 8),
-                    child: FlatButton(
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(7),
+                    child: TextButton(
+                      style: ButtonStyle(
+                        // fixedSize: Size.fromHeight(42),
+                          backgroundColor: MaterialStateProperty.all(Colors.white) ,
+                          shape: MaterialStateProperty.all<RoundedRectangleBorder>(RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(7),
+                          )),
                       ),
-                      height: 42,
-                      color: Colors.white,
                       onPressed: () {
 
                       },
-                      child: Text("New Job Post",style: TextStyle(color: Color(0xff174590),fontFamily: 'Lato',fontWeight: FontWeight.bold),),
+                      child: Text("New Job Post",
+                        style: TextStyle(
+                            color: Color(0xff174590),
+                            fontFamily: 'Lato',
+                            fontWeight: FontWeight.bold,
+                          
+                        ),),
 
                     ),
                   ),
@@ -571,12 +579,13 @@ class _DashboardPageState extends State<DashboardPage> {
                                       ),
                                       Padding(
                                         padding: const EdgeInsets.symmetric(vertical: 7),
-                                        child: FlatButton(
-                                          shape: RoundedRectangleBorder(
-                                            borderRadius: BorderRadius.circular(7),
+                                        child: TextButton(
+                                          style: ButtonStyle(
+                                              backgroundColor: MaterialStateProperty.all(Colors.orangeAccent) ,
+                                              shape: MaterialStateProperty.all<RoundedRectangleBorder>(RoundedRectangleBorder(
+                                                borderRadius: BorderRadius.circular(7),
+                                              ))
                                           ),
-                                          height: 42,
-                                          color: Colors.orangeAccent,
                                           onPressed: () {
                                           },
                                           child: Text("Post Job",style: TextStyle(color: Color(0xff174590),fontFamily: 'Lato',fontWeight: FontWeight.bold),),
